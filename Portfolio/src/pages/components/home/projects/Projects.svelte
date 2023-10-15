@@ -59,17 +59,19 @@
     <h1 class="Title">{Title}</h1>
     <div class="Projects">
         {#each projects as project (project.id)}
-            {#if !hiddenProjects.includes(project.name)}
+        {#if !hiddenProjects.includes(project.name)}
             <Saos animation={"from-up 1.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
-                <Projectcard name={project.name} image={project.image} repo_url={project.html_url} project_url={project.homepage}>
+                <Projectcard name={project.name} repo_url={project.html_url} project_url={project.homepage}>
+                    <img src={project.faviconUrl} alt="">
                     <div class="Buttons">
                         <button on:click={() => openRepository(project.html_url)}>Open Repo</button>
                         <button on:click={() => openProject(project.homepage)}>Open Project</button>
                     </div>
                 </Projectcard>
             </Saos>
-            {/if}
-        {/each}
+        {/if}
+    {/each}
+    
     </div>
 </main>
   
@@ -89,6 +91,11 @@
         text-align: center;
         font-size: 6vh;
         color: #8844ee;
+    }
+
+    img {
+        width: 50vh;
+        border-radius: 3vh;
     }
   
     .Projects {
