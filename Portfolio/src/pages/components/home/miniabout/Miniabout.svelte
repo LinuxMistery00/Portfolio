@@ -1,10 +1,15 @@
 <script>
     const PurpleName = '<Linux/>'
+
+    function ToGithub() {
+        window.location.href = 'https://github.com/LinuxMistery00'
+    }
 </script>
 
 <main>
     <div>
-        <h1 class="Name">Eduardo Silva ou<br/> <span class="PurpleName">{ PurpleName }</span></h1>
+        <h1 class="Name">Eduardo Silva ou<br/> <span class="PurpleName">{ PurpleName }</span></h1><br/>
+        <h1 on:click={ToGithub} class="devicon-github-original"></h1>
     </div>
 </main>
 
@@ -20,5 +25,11 @@
 
     .PurpleName {
         color: #8844ee;
+    }
+
+    .devicon-github-original {
+        text-align: center;
+        margin-top: -12vh;
+        font-size: 5vh;
     }
 </style>

@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import Saos from 'saos'
     import Projectcard from "../projectcard/Projectcard.svelte";
   
     type Project = {
@@ -42,7 +43,6 @@
                         case 'Calc':
                             technologies = ['HTML5', 'SASS', 'TypeScript', 'Angular'];
                             break;
-                        // Adicione cases para outros projetos aqui
                     }
   
                     return {
@@ -60,18 +60,30 @@
     <div class="Projects">
         {#each projects as project (project.id)}
             {#if !hiddenProjects.includes(project.name)}
+            <Saos animation={"from-up 1.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
                 <Projectcard name={project.name} image={project.image} repo_url={project.html_url} project_url={project.homepage}>
                     <div class="Buttons">
                         <button on:click={() => openRepository(project.html_url)}>Open Repo</button>
                         <button on:click={() => openProject(project.homepage)}>Open Project</button>
                     </div>
                 </Projectcard>
+            </Saos>
             {/if}
         {/each}
     </div>
 </main>
   
 <style>
+    @keyframes -global-from-up {
+  0% {
+    transform: translateY(200vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
     .Title {
         margin-top: 80vh;
         text-align: center;
