@@ -118,4 +118,14 @@
     .Buttons {
         display: flex;
     }
+
+    @media (max-width: 728px) {
+        img {
+            width: 30vh;
+        }
+
+        .Buttons button {
+            width: 25vh;
+        }
+    }
 </style>

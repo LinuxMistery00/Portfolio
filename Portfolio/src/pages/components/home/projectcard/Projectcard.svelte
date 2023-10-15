@@ -23,5 +23,11 @@
       align-items: center;
       padding: 1vh;
     }
+
+    @media (max-width: 728px) {
+        .Card {
+            width: 50vh;
+        }
+    }
   </style>
   
