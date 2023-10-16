@@ -1,0 +1,34 @@
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+  
+.label {
+  width: 108px;
+  height: 44px;
+}
+
+.label .text-wrapper {
+  top: 0;
+  left: 0;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.HR {
+    background-color: #ffffff;
+    width: 70vh;
+    height: 0.1vh;
+}
+
+.Options {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
