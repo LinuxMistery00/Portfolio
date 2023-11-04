@@ -1,11 +1,13 @@
 .MiniAbout {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5vh;
     margin-top: 15vh;
 }
 
 .LinuxImg {
+    display: block;
     width: 50vh;
     border-radius: 0.8vh;
 }
@@ -19,4 +21,14 @@
 .Locate {
     font-size: 2vh;
     font-weight: 100;
+}
+
+@media (max-width: 426px) {
+    .LinuxImg {
+        width: 40vh;
+    }
+
+    .MiniAboutIntern h1 {
+        font-size: 4vh;
+    }
 }

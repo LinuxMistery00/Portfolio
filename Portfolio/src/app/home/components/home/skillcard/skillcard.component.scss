@@ -6,3 +6,9 @@
     background-color: #24292f;
     border-radius: 1vh;
 }
+
+@media (max-width: 426px) {
+    .Skillcard {
+        width: 15vh;
+    }
+}

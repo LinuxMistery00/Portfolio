@@ -1,7 +1,7 @@
 .Header {
   display: flex;
-  justify-content: space-around;
-  gap: 130vh;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-top: 3.5vh;
 }
 
