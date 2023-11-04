@@ -1,0 +1,90 @@
+.Projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vh;
+    margin-top: 55vh;
+ }
+
+.Title {
+    margin-top: 80vh;
+    font-size: 6vh;
+    text-align: center;
+    color: #149eca;
+}
+
+.ProjectName {
+    margin-top: -6vh;
+    text-align: center;
+    color: #f1f2f3;
+}
+
+.ProjectDescription {
+position: absolute;
+color: #ffffff;
+font-weight: 500;
+top: 10vh;
+left: 0%;
+right: 0%;
+text-align: center;
+}
+
+.Buttons {
+    margin-top: 18vh;
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+}
+
+button {
+    width: 20vh;
+    height: 5vh;
+    border: 0;
+    border-radius: 3vh;
+    background-color: #23272f;
+    color: #f1f2f3;
+    font-size: 3vh;
+}
+
+img {
+    width: 45vh;
+    height: 25vh;
+    margin-top: 2vh;
+    margin-left: 0vh;
+    border-radius: 3vh;
+}
+
+@media (max-width: 765px) {
+    img {
+        width: 30vh;
+    }
+
+    button {
+        width: 20vh;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
+
+    .Buttons {
+        margin-top: 22vh;
+    }
+
+    .Projects {
+        margin-left: 12vh;
+    }
+  }
+
+  .Techs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+    margin-top: 4vh;
+  }
+
+  .Tech {
+    font-size: 1.5vh;
+    color: #f1f2f3;
+  }

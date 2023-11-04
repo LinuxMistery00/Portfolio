@@ -1,0 +1,38 @@
+.Skills {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 7vh;
+margin-top: 55vh;
+}
+
+.Skills h1 {
+font-size: 10vh;
+color: rgb(196, 196, 196);
+}
+
+.LangName {
+color: #f1f2f3;
+margin-top: 2.8vh;
+}
+
+.SkillsIntern {
+display: flex;
+flex-wrap: wrap;
+gap: 1vh;
+justify-content: center;
+}
+
+.SkillsIntern {
+display: flex;
+}
+
+.FirstInternSkills {
+display: flex;
+flex-direction: column;
+gap: 1vh;
+}
+
+img {
+    width: 5vh;
+}

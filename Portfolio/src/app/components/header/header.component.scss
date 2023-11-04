@@ -1,34 +1,13 @@
-.box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-  
-.label {
-  width: 108px;
-  height: 44px;
+.Header {
+  display: flex;
+  justify-content: space-around;
+  gap: 130vh;
+  margin-top: 3.5vh;
 }
 
-.label .text-wrapper {
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.HR {
-    background-color: #ffffff;
-    width: 70vh;
-    height: 0.1vh;
-}
-
-.Options {
-    display: flex;
-    justify-content: center;
-    gap: 5vh;
+.Name {
+  font-size: 4vh;
+  font-family: Arial, Helvetica, sans-serif, Bold;
+  font-weight: 900;
+  margin-left: -20vh;
 }

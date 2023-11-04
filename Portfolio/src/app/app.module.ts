@@ -5,16 +5,32 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { OptionsComponent } from './components/options/options.component';
+import { MiniaboutComponent } from './home/components/home/miniabout/miniabout.component';
+import { SkillcardComponent } from './home/components/home/skillcard/skillcard.component';
+import { SkillsComponent } from './home/components/home/skills/skills.component';
+import { AboutComponent } from './home/components/home/about/about.component';
+import { ProjectcardComponent } from './home/components/home/projectcard/projectcard.component';
+import { ProjectsComponent } from './home/components/home/projects/projects.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    OptionsComponent,
+    MiniaboutComponent,
+    SkillcardComponent,
+    SkillsComponent,
+    AboutComponent,
+    ProjectcardComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

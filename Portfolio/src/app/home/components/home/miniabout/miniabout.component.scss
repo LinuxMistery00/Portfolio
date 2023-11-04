@@ -1,0 +1,22 @@
+.MiniAbout {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    margin-top: 15vh;
+}
+
+.LinuxImg {
+    width: 50vh;
+    border-radius: 0.8vh;
+}
+
+.MiniAboutIntern h1 {
+  font-family: Arial, Helvetica;
+  font-size: 6vh;
+  font-weight: 900;
+}
+
+.Locate {
+    font-size: 2vh;
+    font-weight: 100;
+}
