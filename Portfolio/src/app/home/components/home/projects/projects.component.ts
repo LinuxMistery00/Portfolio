@@ -24,9 +24,9 @@ export class ProjectsComponent implements OnInit {
           technologies: []
         }));
 
-        const ecommerce = this.projects.find(project => project.name === 'Finance');
-        if (Finance) {
-          Finance.technologies = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Nuxt', 'Vue'];
+        const ecommerce = this.projects.find(project => project.name === 'ecommerce');
+        if (ecommerce) {
+          ecommerce.technologies = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Nuxt', 'Vue'];
         }
       });
 
