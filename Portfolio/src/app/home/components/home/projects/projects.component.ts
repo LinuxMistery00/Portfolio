@@ -24,49 +24,9 @@ export class ProjectsComponent implements OnInit {
           technologies: []
         }));
 
-        const Finance = this.projects.find(project => project.name === 'Finance');
+        const ecommerce = this.projects.find(project => project.name === 'Finance');
         if (Finance) {
-          Finance.technologies = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'NodeJS', 'MongoDB'];
-        }
-
-        const Calc = this.projects.find(project => project.name === 'Calc');
-        if (Calc) {
-          Calc.technologies = ['HTML5', 'SASS', 'TypeScript', 'Angular'];
-        }
-
-        const Avaliacao = this.projects.find(project => project.name === 'Avaliacao');
-        if (Avaliacao) {
-          Avaliacao.technologies = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Svelte'];
-        }
-
-        const PasswordGenerator = this.projects.find(project => project.name === 'PasswordGenerator');
-        if (PasswordGenerator) {
-          PasswordGenerator.technologies = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React'];
-        }
-
-        const DevRegistration = this.projects.find(project => project.name === 'DevRegistration');
-        if (DevRegistration) {
-          DevRegistration.technologies = ['HTML5', 'CSS3', 'JavaScript', 'Nodejs', 'MongoDB'];
-        }
-
-        const Pokemons = this.projects.find(project => project.name === 'Pokemons');
-        if (Pokemons) {
-          Pokemons.technologies = ['HTML5', 'CSS3', 'TypeScript', 'React'];
-        }
-
-        const TextEditorVue = this.projects.find(project => project.name === 'TextEditorVue');
-        if (TextEditorVue) {
-          TextEditorVue.technologies = ['HTML5', 'Vue', 'JavaScript', 'TypeScript'];
-        }
-
-        const Posfirst = this.projects.find(project => project.name === 'Posfirst');
-        if (TextEditorVue) {
-          Posfirst.technologies = ['HTML5', 'CSS3', 'TypeScript', 'React', 'PostgreSQL'];
-        }
-
-        const Firefox = this.projects.find(project => project.name === 'Firefox');
-        if (Firefox) {
-          Firefox.technologies = ['HTML5', 'SASS', 'TypeScript', 'Angular'];
+          Finance.technologies = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Nuxt', 'Vue'];
         }
       });
 
@@ -89,6 +49,11 @@ export class ProjectsComponent implements OnInit {
     this.hiddenProjects.push('Yulang');
     this.hiddenProjects.push('linguist');
     this.hiddenProjects.push('exercicios');
+    this.hiddenProjects.push('Finance');
+    this.hiddenProjects.push('Firefox');
+    this.hiddenProjects.push('PasswordGenerator');
+    this.hiddenProjects.push('TextEditorVue');
+    this.hiddenProjects.push('Calc');
   }
 
   openRepository(url: string) {
