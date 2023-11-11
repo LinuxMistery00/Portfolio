@@ -33,4 +33,11 @@ export class OptionsComponent {
       behavior: 'smooth'
     })
    }
+
+   ToCertificates() {
+    window.scroll({
+      top: 4000,
+      behavior: 'smooth'
+    })
+   }
 }
