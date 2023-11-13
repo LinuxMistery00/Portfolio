@@ -13,6 +13,7 @@ import { AboutComponent } from './home/components/home/about/about.component';
 import { ProjectcardComponent } from './home/components/home/projectcard/projectcard.component';
 import { ProjectsComponent } from './home/components/home/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FinalbarComponent } from './home/components/home/finalbar/finalbar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ProjectcardComponent,
     ProjectsComponent,
+    FinalbarComponent,
   ],
   imports: [
     BrowserModule,
