@@ -1,13 +1,15 @@
 <!-- skills.component.html -->
 <section class="Skills">
     <h1>HA<br/>BILI<br/>DA<br/>DES</h1>
-    <div class="SkillsIntern">
+    <div class="Intern">
+      <div class="Buttons">
       <button (click)="filterSkills('all')">All</button>
       <button (click)="filterSkills('front-end')">Front-end</button>
       <button (click)="filterSkills('back-end')">Back-end</button>
       <button (click)="filterSkills('others')">Others</button>
-  
-      <div class="SkillsIntern">
+    </div>
+    <div class="SkillsIntern">
+      <div style="margin-top: 2vh;" class="SkillsIntern">
         <ng-container *ngFor="let skill of skills">
           <app-skillcard [ngClass]="{'show': isSkillInCategory(skill)}" *ngIf="isSkillInCategory(skill)">
             <h3 class="LangName">{{ skill }}</h3>
@@ -15,6 +17,7 @@
           </app-skillcard>
         </ng-container>
       </div>
+    </div>
     </div>
   </section>
   

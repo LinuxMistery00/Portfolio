@@ -16,6 +16,17 @@ button {
     height: 3vh;
 }
 
+.Buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.Intern {
+    display: flex;
+    flex-direction: column;
+}
+
 .Skills h1 {
 font-size: 10vh;
 color: rgb(196, 196, 196);
