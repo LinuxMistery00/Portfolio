@@ -44,7 +44,7 @@ button {
     font-size: 3vh;
 }
 
-img {
+.ProjectImg {
     width: 45vh;
     height: 25vh;
     margin-top: 2vh;
@@ -52,7 +52,7 @@ img {
 }
 
 @media (max-width: 765px) {
-    img {
+    .ProjectImg {
         width: 30vh;
     }
 
@@ -80,3 +80,7 @@ img {
     font-size: 1.5vh;
     color: #f1f2f3;
   }
+
+.LangImg {
+    max-width: 5vh;
+}

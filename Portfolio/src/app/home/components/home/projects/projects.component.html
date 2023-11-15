@@ -2,12 +2,12 @@
   <div *ngFor="let project of projects">
     <app-projectcard *ngIf="!isProjectHidden(project)">
       <div class="front-content">
-      <h2 class="ProjectName">{{ project.name }}</h2>
-      <img src="{{ project.faviconUrl }}" alt="">
+        <h2 class="ProjectName">{{ project.name }}</h2>
+        <img class="ProjectImg" src="{{ project.faviconUrl }}" alt="">
       </div>
       <div class="back-content">
-      <div class="Techs">
-        <h1 *ngFor="let tech of project.technologies" class="Tech">{{ tech }}</h1>
+        <div class="Techs">
+          <img ngClass="LangImg" *ngFor="let tech of project.technologies" [src]="tech" alt="{{ tech }}" class="Tech">
         </div>
         <h2 class="ProjectDescription">{{ project.description }}</h2>
         <div class="Buttons">

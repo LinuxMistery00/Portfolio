@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -21,39 +21,46 @@ export class ProjectsComponent implements OnInit {
           ...project,
           isVisible: true,
           faviconUrl: `${project.homepage}/favicon.ico`,
-          technologies: []
+          technologies: this.getTechnologyLogos(project.name),
         }));
-
-        const ecommerce = this.projects.find(project => project.name === 'ecommerce');
-        if (ecommerce) {
-          ecommerce.technologies = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Nuxt', 'Vue'];
-        }
       });
 
     this.hiddenProjects.push('Naval-Battle');
     this.hiddenProjects.push('LinuxMistery00');
-    this.hiddenProjects.push('ProgramadorOrientadoaObjetoMain');
-    this.hiddenProjects.push('Indalo');
-    this.hiddenProjects.push('Windows95');
-    this.hiddenProjects.push('Portfolio');
-    this.hiddenProjects.push('To-Do-List');
-    this.hiddenProjects.push('E-Commerce');
-    this.hiddenProjects.push('Tic-Tac-Toe');
-    this.hiddenProjects.push('Curso-de-Java-RocketSeat');
-    this.hiddenProjects.push('TextsForYou');
-    this.hiddenProjects.push('Houses');
-    this.hiddenProjects.push('DevRegistration');
-    this.hiddenProjects.push('Posfirst');
-    this.hiddenProjects.push('Pokemons');
     this.hiddenProjects.push('Avaliacao');
-    this.hiddenProjects.push('Yulang');
-    this.hiddenProjects.push('linguist');
+    this.hiddenProjects.push('BlockBlocking');
+    this.hiddenProjects.push('Calc');
+    this.hiddenProjects.push('Curso-de-Java-RocketSeat');
+    this.hiddenProjects.push('DevRegistration');
     this.hiddenProjects.push('exercicios');
     this.hiddenProjects.push('Finance');
     this.hiddenProjects.push('Firefox');
+    this.hiddenProjects.push('Houses');
+    this.hiddenProjects.push('linguist');
+    this.hiddenProjects.push('Indalo');
+    this.hiddenProjects.push('Pokemons');
     this.hiddenProjects.push('PasswordGenerator');
+    this.hiddenProjects.push('Portfolio');
+    this.hiddenProjects.push('ProgramadorOrientadoaObjetoMain');
     this.hiddenProjects.push('TextEditorVue');
-    this.hiddenProjects.push('Calc');
+    this.hiddenProjects.push('Posfirst');
+    this.hiddenProjects.push('TextsForYou');
+    this.hiddenProjects.push('Tic-Tac-Toe');
+    this.hiddenProjects.push('To-Do-List');
+    this.hiddenProjects.push('Windows95');
+  }
+
+  getTechnologyLogos(projectName: string): string[] {
+    switch (projectName.toLowerCase()) {
+      case 'ecommerce':
+        return [
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg'
+        ];
+      default:
+        return [];
+    }
   }
 
   openRepository(url: string) {
