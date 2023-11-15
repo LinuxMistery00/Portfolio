@@ -58,16 +58,18 @@ export class ProjectsComponent implements OnInit {
           'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
           'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg'
         ];
-      case 'DevsRegistration':
+      case 'devsregistration':
         return [
-          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg'
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
         ];
       default:
         return [];
     }
   }
+  
 
   openRepository(url: string) {
     window.open(url, '_blank');
