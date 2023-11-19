@@ -67,6 +67,15 @@ export class ProjectsComponent implements OnInit {
           'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
           'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
         ];
+      case 'todolist':
+        return [
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
+        ];
       default:
         return [];
     }
