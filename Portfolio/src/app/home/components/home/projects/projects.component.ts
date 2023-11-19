@@ -48,6 +48,8 @@ export class ProjectsComponent implements OnInit {
     this.hiddenProjects.push('Tic-Tac-Toe');
     this.hiddenProjects.push('To-Do-List');
     this.hiddenProjects.push('Windows95');
+    this.hiddenProjects.push('DevsRegistration');
+    this.hiddenProjects.push('BlockBlocking');
   }
 
   getTechnologyLogos(projectName: string): string[] {
